@@ -44,7 +44,7 @@ namespace Bakery.Test
       public void BreadPrice_GetPriceOfThreeLoavesOfBread_Int()
       {
         int breadPriceForThree = 10;
-        int breadQuantity = 1;
+        int breadQuantity = 3;
         int breadCost = 5;
         Bread newBread = new Bread(breadQuantity, breadCost);
         Assert.AreEqual(breadPriceForThree, newBread.CreateBreadPrice());

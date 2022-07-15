@@ -16,7 +16,7 @@ namespace Bakery.Models
   
     public int CreateBreadPrice()
     {
-      int breadOrder = 3;
+      int breadOrder = Quantity;
       int breadTotal = 0;
       for(int index = 0; index < breadOrder; index ++)
       {
