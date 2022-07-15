@@ -30,8 +30,6 @@ namespace  Bakery
       int total = breadCost + pastryCost;
       Console.WriteLine("Your total is: $" + total);
 
-
-
     }
   }
 }

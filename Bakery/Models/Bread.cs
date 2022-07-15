@@ -28,8 +28,8 @@ namespace Bakery.Models
       
       return breadTotal;
     }
-    }
   }
+}
 
          
          
