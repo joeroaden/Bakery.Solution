@@ -28,9 +28,17 @@ namespace Bakery.Test
       public void PastryPrice_CreatInstanceOfPastryWithPrice_Int()
       {
         int pastryCost = 2;
-        Pastry newPastry = new Pastry(pastryCost);
+        int pastryQuantity = 1;
+        Pastry newPastry = new Pastry(pastryCost, pastryQuantity);
         Assert.AreEqual(pastryCost, newPastry.Price);
       }
-
+      [TestMethod]
+      public void PastryQuantity_CreatInstanceOfPastryWithQuantity_Int()
+       {
+        int pastryCost = 2;
+        int pastryQuantity = 1;
+        Pastry newPastry = new Pastry(pastryCost, pastryQuantity);
+        Assert.AreEqual(pastryQuantity, newPastry.Quantity);
+      }
     }
   }
