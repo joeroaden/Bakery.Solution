@@ -13,6 +13,8 @@
 ## Description
 
 _A web application that takes a customer's order at a bakery and returns the price, factoring in deals_
+_Bread: Buy 2, get 1 free (every 3rd loaf of bread is free.). A single loaf costs $5, two loaves costs $10, and three loaves cost $10.
+Pastry: Buy 1 for $2 or 3 for $5. Four pastries costs $7, five pastries costs $9, and six pastries costs $10._
 
 - [x] _This project's GitHub repo can be found at the following link_ [GitHub](https://github.com/joeroaden/Bakery.Solution).
 
