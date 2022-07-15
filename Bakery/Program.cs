@@ -17,7 +17,7 @@ namespace  Bakery
       string stringBreadOrder = Console.ReadLine();
       int breadOrder = int.Parse(stringBreadOrder);
       int breadPrice = 5;
-      Bread newBread = new Bread(breadOrder, breadPrice );
+      Bread newBread = new Bread(breadOrder, breadPrice);
 
       Console.WriteLine("How many pastries would you like today?");
       string stringPastryOrder = Console.ReadLine();
