@@ -11,7 +11,7 @@ namespace Bakery.Test
       [TestMethod]
       public void BreadPrice_MakesAnInstanceOfBread_Int()
       {
-        int breadQuantity = 2;
+        int breadQuantity = 1;
         //double breadCost = 6;
         Bread newBread = new Bread(breadQuantity);
         Assert.AreEqual(1, breadQuantity);
