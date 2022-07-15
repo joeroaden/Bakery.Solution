@@ -14,7 +14,7 @@ namespace Bakery.Test
         int breadQuantity = 1;
         int breadCost = 5;
         Bread newBread = new Bread(breadQuantity, breadCost);
-        Assert.AreEqual(breadQuantity, newBread.Quantity);
+        Assert.AreEqual(1, newBread.Quantity);
       }
       [TestMethod]
       public void BreadPrice_GetPriceOfOneLoafOfBread_Int()
@@ -22,7 +22,7 @@ namespace Bakery.Test
         int breadQuantity = 1;
         int breadCost = 5;
         Bread newBread = new Bread(breadQuantity, breadCost);
-        Assert.AreEqual(breadCost, newBread.Price);
+        Assert.AreEqual(5, newBread.Price);
       }
       [TestMethod]
       public void PastryPrice_CreatInstanceOfPastryWithPrice_Int()
@@ -30,7 +30,7 @@ namespace Bakery.Test
         int pastryCost = 2;
         int pastryQuantity = 1;
         Pastry newPastry = new Pastry(pastryCost, pastryQuantity);
-        Assert.AreEqual(pastryCost, newPastry.Price);
+        Assert.AreEqual(2, newPastry.Price);
       }
       [TestMethod]
       public void PastryQuantity_CreatInstanceOfPastryWithQuantity_Int()
@@ -38,7 +38,7 @@ namespace Bakery.Test
         int pastryCost = 2;
         int pastryQuantity = 1;
         Pastry newPastry = new Pastry(pastryCost, pastryQuantity);
-        Assert.AreEqual(pastryQuantity, newPastry.Quantity);
+        Assert.AreEqual(1, newPastry.Quantity);
       }
     }
   }
