@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System;
 
 namespace Bakery.Models 
@@ -6,17 +7,32 @@ namespace Bakery.Models
   {
     public int Price { get; set; }
     public int Quantity { get; set; }
-    private static List<Bread> _breadOrder = new List<Bread> {};
 
     public Bread(int quantity, int price)
     {
       Price = price;
       Quantity = quantity;
     }
-    
+  
     public int CreateBreadPrice()
     {
-
+      int breadOrder = 4;
+      int breadTotal = 0;
+      for(int index = 0; index < breadOrder; index ++)
+      {
+        if((index + 1) % 3 != 0) 
+        {
+          breadTotal += Price;
+         }
+      }
+      
+      return breadTotal;
+    }
     }
   }
-}
+
+         
+         
+    
+  
+  

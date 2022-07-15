@@ -40,5 +40,15 @@ namespace Bakery.Test
         Pastry newPastry = new Pastry(pastryCost, pastryQuantity);
         Assert.AreEqual(1, newPastry.Quantity);
       }
+      [TestMethod]
+      public void BreadPrice_GetPriceOfThreeLoavesOfBread_Int()
+      {
+        //int breadOrder = 0;
+        int breadPriceForThree = 10;
+        int breadQuantity = 1;
+        int breadCost = 5;
+        Bread newBread = new Bread(breadQuantity, breadCost);
+        Assert.AreEqual(breadPriceForThree, newBread.CreateBreadPrice());
+      }
     }
   }
