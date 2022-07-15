@@ -12,16 +12,18 @@ namespace Bakery.Test
       public void BreadQuantity_MakesAnInstanceOfBread_Int()
       {
         int breadQuantity = 1;
-        //double breadCost = 6;
-        Bread newBread = new Bread(breadQuantity);
+        int breadCost = 5;
+        Bread newBread = new Bread(breadQuantity, breadCost);
         Assert.AreEqual(1, breadQuantity);
       }
-      // [TestMethod]
-      // public void Bre
-
-// next test
-//  Bread newBread = new Bread(breadQuantity);
-//         Assert.AreEqual(breadCost, newBread.breadCost());
+      [TestMethod]
+      public void BreadPrice_GetPriceOfOneLoafOfBread_Int()
+      {
+        int breadQuantity = 1;
+        int breadCost = 5;
+        Bread newBread = new Bread(breadQuantity, breadCost);
+        Assert.AreEqual(6, newBread.Price);
+      }
 
     }
   }

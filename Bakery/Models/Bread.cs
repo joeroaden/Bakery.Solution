@@ -4,13 +4,13 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public static int Price = 5;
+    public int Price { get; set; }
     // private double _Discount; shoudl we use this in Price.cs?
     public int Quantity { get; set; }
 
-    public Bread(int quantity)
+    public Bread(int quantity, int price)
     {
-      //Price = price;
+      Price = price;
       Quantity = quantity;
     }
   }
