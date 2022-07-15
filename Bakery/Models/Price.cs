@@ -5,3 +5,5 @@ namespace Bakery.Models
 {
   public class Price
   {
+  }
+}
