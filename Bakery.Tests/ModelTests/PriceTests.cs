@@ -22,7 +22,7 @@ namespace Bakery.Test
         int breadQuantity = 1;
         int breadCost = 5;
         Bread newBread = new Bread(breadQuantity, breadCost);
-        Assert.AreEqual(6, newBread.Price);
+        Assert.AreEqual(breadCost, newBread.Price);
       }
 
     }
