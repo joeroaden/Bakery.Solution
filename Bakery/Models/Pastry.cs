@@ -14,7 +14,7 @@ namespace Bakery.Models
     }
     public int CreatePastryPrice()
     {
-      int pastryOrder = 2;
+      int pastryOrder = 3;
       int pastryTotal = ((pastryOrder/3)*5)+((pastryOrder % 3)*2);
       return pastryTotal;
   }
