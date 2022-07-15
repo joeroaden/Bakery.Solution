@@ -14,7 +14,7 @@ namespace Bakery.Test
         int breadQuantity = 1;
         int breadCost = 5;
         Bread newBread = new Bread(breadQuantity, breadCost);
-        Assert.AreEqual(1, breadQuantity);
+        Assert.AreEqual(breadQuantity, newBread.Quantity);
       }
       [TestMethod]
       public void BreadPrice_GetPriceOfOneLoafOfBread_Int()
